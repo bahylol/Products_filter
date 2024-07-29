@@ -1,6 +1,7 @@
 const express = require('express');
 
 require('dotenv').config();
+const db = require('./config/database.js');
 
 const app = express();
 app.use(express.json());
@@ -24,7 +25,12 @@ app.all('*', (req, res) => {
 
 const PORT = process.env.PORT;
 
+db.once('open', () => {
+	app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
 
-app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
+});
 
+db.on('error', (err) => {
+	console.error('MongoDB error:', err);
+});
 
