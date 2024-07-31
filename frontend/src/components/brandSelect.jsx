@@ -6,7 +6,56 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 const BrandSelect = ({ value, onChange }) => {
-  const brands = ["Brand A", "Brand B", "Brand C"];
+  const brands = [
+    "Apple",
+    "Sony",
+    "Manduka",
+    "Nike",
+    "Hamilton Beach",
+    "Canon",
+    "Philips",
+    "North Face",
+    "DeWalt",
+    "KitchenAid",
+    "Asus",
+    "Dyson",
+    "Wacom",
+    "Nest",
+    "Coleman",
+    "Bose",
+    "Presto",
+    "Philips Hue",
+    "DJI",
+    "Fender",
+    "Amazon Kindle",
+    "Instant Pot",
+    "Rad Power Bikes",
+    "Anker",
+    "Brita",
+    "Juul",
+    "Ikea",
+    "Nikon",
+    "RavPower",
+    "LG",
+    "Merrell",
+    "Moft",
+    "Fitbit",
+    "George Foreman",
+    "Santa Cruz",
+    "Fujifilm",
+    "Burton",
+    "TP-Link",
+    "Crock-Pot",
+    "Tern",
+    "Sennheiser",
+    "Honeywell",
+    "Giro",
+    "Garmin",
+    "Dimplex",
+    "GoPro",
+    "Liforme",
+    "Weber"
+  ];
 
   return (
     <Box sx={{ minWidth: 120 }}>
