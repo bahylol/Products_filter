@@ -28,7 +28,7 @@ const App = () => {
     fetchProducts();
   }, [minPrice, maxPrice, brand, category]);
 
-  const handleMinPriceChange = (newValue) => {
+  const handlePriceChange = (newValue) => {
     setMinPrice(newValue[0]);
     setMaxPrice(newValue[1]);
   };
@@ -59,7 +59,7 @@ const App = () => {
             id="price-select"
             minPrice={minPrice}
             maxPrice={maxPrice}
-            onChange={handleMinPriceChange}
+            onChange={handlePriceChange}
           />
         </div>
         <Button
