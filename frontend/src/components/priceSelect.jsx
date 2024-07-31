@@ -23,7 +23,7 @@ const PriceSelect = ({ minPrice, maxPrice, onChange }) => {
         valueLabelDisplay="auto"
         getAriaValueText={valuetext}
         min={0}
-        max={1000} 
+        max={500} 
       />
     </Box>
   );
