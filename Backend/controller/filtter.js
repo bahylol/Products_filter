@@ -10,8 +10,7 @@ module.exports = function (app) {
 
         // Construct the query object
         let query = {};
-
-        if (category) {
+        if (category !== "") {
             query.category = category;
         }
         if (!isNaN(minPrice)) {
@@ -22,7 +21,7 @@ module.exports = function (app) {
             query.price = query.price || {};
             query.price.$lte = maxPrice;
         }
-        if (brand) {
+        if (brand !== "") {
             query.brand = brand;
         }
 
